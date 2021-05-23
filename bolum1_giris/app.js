@@ -104,7 +104,7 @@ const yıl = 2021;
 const dogumTarihi = 1980;
 const sene = yıl - dogumTarihi;
 console.log("YAŞ:" + sene);
-// console.log("YAŞ:" + yıl - dogumTarihi);   // !Hata --->  NaN = Not a Number
+// console.log("YAŞ:" + yıl - dogumTarihi);   // !Hata --->  NaN = Not a Number (Sayı değil)
 console.log("YAŞ:" + (yıl - dogumTarihi));
 console.log(`YAŞ:${yıl - dogumTarihi}`); // * Template Literal ile yazdırma.
 
@@ -114,7 +114,7 @@ const us = 8;
 const sonuc = taban ** us; // ? Us alma operatoru
 console.log(sonuc);
 
-// Mod alma %
+//! Mod alma %
 const sayi = 123;
 
 const birler = sayi % 10;
@@ -155,3 +155,8 @@ const result =
   age >= 18 ? `${name1} ehliyet alabilir` : `${name1} ehliyet alamaz`;
 
 console.log(result);
+
+const sayi4 = 41;
+console.log(String(sayi4), sayi4);
+/? 0, null, undefined, NaN, ve ” ” Javascript tarafından false olarak kabul edilir.
+//? Diğer sayılar Boolean’a  çevrildiğinde true olarak kabul edilir.

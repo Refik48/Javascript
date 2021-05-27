@@ -77,8 +77,8 @@
 // const usAl = (t, u) => t ** u;
 // console.log(usAl(taban, us));
 
-// * Ornek: Menü
-// ! Ok fonksiyonunda birden fazla ifade var ise fonksiyonda suslu parantez kullanmalıyız.
+// // * Ornek: Menü
+// // ! Ok fonksiyonunda birden fazla ifade var ise fonksiyonda suslu parantez kullanmalıyız.
 const menu = () => {
   console.log("=====================================");
   console.log("          JAVASCRIPT DERSI");
@@ -87,25 +87,37 @@ const menu = () => {
 
 menu();
 
-// // Ornek: Bilgi Ver fonksiyonu
-// // * 1.YÖNTEM
-// const bilgiVer = (ad, soyad, dogum) => {
-//   const bilgi = `Adim ${ad}, Soyadim ${soyad} ve yasim ${2021 - dogum}`;
-//   return bilgi;
-// };
+const bilgiver = (ad, soyad, dogum) => {
+  const bilgi = `Adim ${ad},Soyadim${soyad} ve yasim ${2021 - dogum}`;
+  return bilgi;
+};
+console.log(bilgiVer("Mehmet", "Cakmak", 1989));
+// Ornek: Bilgi Ver fonksiyonu
+// * 1.YÖNTEM
+const bilgiVer = (ad, soyad, dogum) => {
+  const bilgi = `Adim ${ad}, Soyadim ${soyad} ve yasim ${2021 - dogum}`;
+  return bilgi;
+};
 
-// // * 2.YÖNTEM
-// const bilgiVer = (ad, soyad, dogum) =>
-//   `Adim ${ad}, Soyadim ${soyad} ve yasim ${2021 - dogum}`;
+// * 2.YÖNTEM
+const bilgiVer = (ad, soyad, dogum) =>
+  `Adim ${ad}, Soyadim ${soyad} ve yasim ${2021 - dogum}`;
 
-// console.log(bilgiVer("Mehmet", "Cakmak", 1989));
+console.log(bilgiVer("Mehmet", "Cakmak", 1989));
 
-// // * ORNEK: Silindirin hacmini hesaplayan bir fonksiyon yaziniz.
-// const r = prompt("Yaricapi giriniz:");
-// const h = prompt("Yukseklik giriniz:");
+const r = prompt("Yaricapi giriniz:");
+const h = prompt("Yukseklik giriniz:");
 
-// const hacimHesapla = (r, h) => Math.PI * r * r * h;
-// // * En yakın sayiya yuvarlar.
-// console.log("Silindir Hacmi:" + Math.round(hacimHesapla(r, h)));
-// // * Virgulden sonra 2 basamak alir.
-// console.log("Silindir Hacmi:" + hacimHesapla(r, h).toFixed(2));
+const hacmiHesaplama = (r, h) => Math.PI * r * r * h;
+
+console.log("Silindir Hacmi:" + hacimHesapla(r, h));
+
+// * ORNEK: Silindirin hacmini hesaplayan bir fonksiyon yaziniz.
+const r = prompt("Yaricapi giriniz:");
+const h = prompt("Yukseklik giriniz:");
+
+const hacimHesapla = (r, h) => Math.PI * r * r * h;
+// * En yakın sayiya yuvarlar.
+console.log("Silindir Hacmi:" + Math.round(hacimHesapla(r, h)));
+// * Virgulden sonra 2 basamak alir.
+console.log("Silindir Hacmi:" + hacimHesapla(r, h).toFixed(2));
